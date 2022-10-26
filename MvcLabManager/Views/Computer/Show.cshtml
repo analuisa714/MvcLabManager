@@ -1,0 +1,11 @@
+@model MvcLabManager.Models.Computer
+
+@{
+    //interpolação de string (colocar uma prop dentro de uma string - não precisa concatenar)
+    ViewData["Title"] = $"Computador {Model.Id}";
+}
+<h1>@ViewData["Title"]</h1>
+
+<p><b>Id:</b> @Model.Id</p>
+<p><b>Ram:</b> @Model.Ram</p>
+<p><b>Processor:</b> @Model.Processor</p>
