@@ -5,7 +5,7 @@ namespace MvcLabManager.Controllers;
 
 public class LaboratoryController : Controller
 {
-    private LabManagerContext _context;
+    private readonly LabManagerContext _context;
 
     public LaboratoryController(LabManagerContext context)
     {

@@ -5,7 +5,7 @@ namespace MvcLabManager.Controllers;
 
 public class ComputerController : Controller
 {
-    private LabManagerContext _context;
+    private readonly LabManagerContext _context;
 
     public ComputerController(LabManagerContext context)
     {
