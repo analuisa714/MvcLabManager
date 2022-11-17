@@ -1,12 +1,11 @@
 @{
-    ViewData["Title"] = "Criar computadores";
+    ViewData["Title"] = "Criar laboratórios";
 }
 
 <div class="text">
     <h1>Cadastrar um novo computador</h1>
     <hr>
 </div>
-
 
 <form action="CreateResult" method="post">
     <table>
@@ -16,13 +15,18 @@
         </tr>
 
         <tr>
-            <td>Ram:</td>
-            <td><input type="text" name="ram" id="ram" class="form-control" required></td>
+            <td>Número:</td>
+            <td><input type="text" name="number" id="number" class="form-control" required></td>
         </tr>
 
         <tr>
-            <td>Processador:</td>
-            <td><input type="text" name="processor" id="processor" class="form-control" required></td>
+            <td>Nome:</td>
+            <td><input type="text" name="name" id="name" class="form-control" required></td>
+        </tr>
+
+        <tr>
+            <td>Bloco:</td>
+            <td><input type="text" name="block" id="block" class="form-control" required></td>
         </tr>
 
         <tr>
