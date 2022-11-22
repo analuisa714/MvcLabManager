@@ -1,7 +1,7 @@
 @model MvcLabManager.Models.Laboratory;
 
 @{
-    ViewData["Title"] = $"Laboratorys {Model.Id}";
+    ViewData["Title"] = $"Laboratório:  {Model.Id}";
 }
 <h1>@ViewData["Title"]</h1>
 
@@ -10,3 +10,12 @@
 <p><b>Nome: </b> @Model.Name</p>
 <p><b>Bloco: </b> @Model.Block</p>
 
+<a href="/Laboratory/Show/@Model.Id">
+    <button type="button">Detalhes</button>
+</a>
+<a href="/Laboratory/Delete/@Model.Id">
+    <button type="button">Deletar</button>
+</a>
+<a href="/Laboratory/Update/@Model.Id">
+    <button type="button">Atualizar</button>
+</a>

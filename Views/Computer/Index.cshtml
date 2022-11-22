@@ -23,12 +23,12 @@ else
                 @foreach(var computer in Model)
                 {
                     <tr>
-                        <th>@computer.Id</th>
-                        <th>@computer.Ram</th>
-                        <th>@computer.Processor</th>
-                        <th>
+                        <td>@computer.Id</td>
+                        <td>@computer.Ram</td>
+                        <td>@computer.Processor</td>
+                        <td>
                             <a href="/Computer/Show/@computer.Id">Ver</a>
-                        </th>
+                        </td>
                     </tr>
                 }
             </tbody>
